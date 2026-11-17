@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sentinel.Common\Sentinel.Common.csproj" />
+    <InternalsVisibleTo Include="Sentinel.Domain.UnitTests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Entities implement Beans.Pageable's IHasCursor/IHasCreatedTimestamp/IHasModifiedTimestamp and derive from
+         Beans.Patchable's PatchableEntity. -->
+    <PackageReference Include="Beans.Pageable" Version="1.0.0" />
+    <PackageReference Include="Beans.Patchable" Version="1.0.2" />
+  </ItemGroup>
+
+</Project>
