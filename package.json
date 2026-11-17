@@ -1,0 +1,20 @@
+{
+  "name": "sentinel",
+  "version": "1.0.0",
+  "description": "Privacy-preserving age verification layer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/craigduggan90/sentinel.git"
+  },
+  "license": "UNLICENSED",
+  "author": "Craig Duggan",
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.2",
+    "@commitlint/config-conventional": "^21.2.2",
+    "commitlint": "^21.2.2",
+    "husky": "^9.1.7"
+  },
+  "scripts": {
+    "prepare": "husky"
+  }
+}
